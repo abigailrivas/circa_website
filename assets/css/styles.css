@@ -11,9 +11,9 @@
     --bold-font: 700;
 
     --h1-font-size: 3rem;
-    --h2-font-size: 1.875rem;
-    --h3-font-size: 1.25rem;
-    --h4-font-size: 1rem;
+    --h2-font-size: 2rem;
+    --h3-font-size: 1.5rem;
+    --h4-font-size: 1.25rem;
     --text-font-size: 1rem;
 
     /*========= Color Scheme ========= */
@@ -139,7 +139,6 @@ img{
 }
 
 .nav__logo{
-    text-transform: uppercase;
     font-weight: var(--bold-font);
     letter-spacing: -0.5px;
     display: inline-flex;
@@ -171,17 +170,17 @@ img{
 /* ============= HOME ============= */
 
 .home{
-    padding: 3rem 0 2rem;
+    padding-top: 1rem;
 }
-
 .home__container{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 10rem;
+    margin-bottom: var(--mb-2);
 }
 
 .home__img{
-    width: 460px;
-    height: auto;
+    width: 500px;
     order: 1;
 }
 
@@ -223,27 +222,60 @@ img{
 .sponsor__title{
     padding-top: 2rem;
     text-align: center;
-    margin-bottom: var(--mb-1-5);
+    margin-bottom: var(--mb-2-5);
 }
 .sponsor__container{
     background-color: var(--second-background-color);
-    height: 6.25rem;
+}
+
+.slider{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.sponsor__logo{
+    /* background-color: aqua; */
+    width: 8%;
+    height: auto;
+    margin: 2rem 1.5rem;
 }
 
 .about{
-    padding: 4rem 0 2rem;
+    padding: 6rem 0 2rem;
 }
 
-/* .about__container
-} */
-
-
-
-
-.sponsor__logo{
-    width: 100px;
-}
 
 .about__title{
     text-align: center;
+    margin-bottom: var(--mb-1-5)
 }
+
+.about__subtitle{
+    text-align: center;
+    margin-bottom: calc(2* var(--mb-1-5));
+}
+
+.about__image{
+    display: inline-block;
+    box-shadow: 0 2px 20px rgba(187, 187, 187, 0.37);
+    margin-bottom: 5rem;
+}
+
+.about__description{
+    display:  grid;
+    width: 100%;
+    grid-template-columns: repeat(3,1fr);
+    align-items:center;
+    column-gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.description__title, .description__text{
+    text-align: center;
+}
+
+.description__title{
+    margin-bottom: var(--mb-1);
+}
+
