@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* ========= VARIABLES CSS ======== */
+:root{
+
+    /*========= Font & Typography ========= */
+    --font-family: "Roboto", sans-serif;
+
+    --regular-font:400;
+    --medium-font: 500;
+    --bold-font: 700;
+
+    --h1-font-size: 3rem;
+    --h2-font-size: 1.875rem;
+    --h3-font-size: 1.25rem;
+    --h4-font-size: 1rem;
+    --text-font-size: 1rem;
+
+    /*========= Color Scheme ========= */
+    --background-color: #ffffff;
+    --second-background-color:#eceaea;
+    --primary-color: rgb(16, 115, 139);
+    --title-color: black;
+    --text-color: #646464;    
+
+    /*========= Margins ========= */
+    --mb-0-5: 0.5rem
+    --mb-0-75: .75rem;
+    --mb-1: 1rem;
+    --mb-1-5: 1.5rem;
+    --mb-2: 2rem;
+    --mb-2-5: 2.5rem;
+
+    /*========= Z-index ========= */
+    --z-tooltip: 10;
+    --z-fixed:100;
+}
+
+/* ============= BASE ============= */
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 4.375rem 0 0 0;
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    transition: .3s;
+}
+
+
+body, a, input,textarea{
+    font-family: var(--font-family);
+}
+
+a{
+    text-decoration: none;
+    color: var(--title-color);
+}
+
+a:hover{
+    color: var(--primary-color);
+}
+
+
+ul{
+    list-style: none;
+}
+
+h1,h2,h3,h4{
+    color: var(--title-color);
+    font-weight: var(--bold-font);
+}
+
+h1{
+    font-size: var(--h1-font-size);
+}
+
+h2{
+    font-size: var(--h2-font-size);
+}
+
+h3{
+    font-size: var(--h3-font-size);
+}
+
+h4{
+    font-size: var(--h4-font-size);
+}
+
+p{
+    font-size: var(--text-font-size);
+    color: var(--text-color);
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+/* ============= REUSABLE CLASSES ============= */
+
+.grid{
+    display: grid;
+}
+
+.container{
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+/* ============= HEADER ============= */
+
+.header{
+    width: 100%;
+    background-color: var(--background-color);
+    position: fixed;
+    z-index: var(--z-fixed);
+    top: 0;
+    left: 0;
+}
+
+.nav{
+    height: 4.375rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo,.nav__link{
+    color: var(--title-color);
+}
+
+.nav__logo{
+    text-transform: uppercase;
+    font-weight: var(--bold-font);
+    letter-spacing: -0.5px;
+    display: inline-flex;
+    column-gap: .3rem;
+    align-items: center;
+    transition: .3s;
+    font-size: 1.3rem;
+    color: var(--title-color);
+}
+
+.nav__logo-icon{
+    font-size: 1.5rem;
+}
+
+.nav__menu{
+    margin-left: auto;
+}
+.nav__list{
+    display: flex;
+    flex-direction: row;
+    column-gap: 3rem;
+}
+
+.nav__item{
+    font-weight: var(--medium-font);
+    transition: .3s;
+}
+
+/* ============= HOME ============= */
+
+.home{
+    padding: 3rem 0 2rem;
+}
+
+.home__container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.home__img{
+    width: 460px;
+    height: auto;
+    order: 1;
+}
+
+.home__title{
+    margin-top: var(--mb-1-5);
+    margin-bottom: var(--mb-1);
+}
+
+.home__description{
+    font-size: 1.125rem;
+    margin-bottom: var(--mb-1-5);
+}
+
+.cta{
+    display: flex;
+    column-gap: 1.5rem;
+    align-items: center;
+    margin-bottom: var(--mb-2-5);
+}
+.cta__button{
+    font-size: 1rem;
+    color: white;
+    background-color: var(--primary-color);
+    padding: 0.75rem 3rem;
+    border-radius: 0.2rem;
+}
+
+.cta__button:hover{
+    color:white;
+    background-color: rgb(22, 134, 161);
+}
+
+.cta__text{
+    color: rgb(126, 126, 126);
+}
+
+/* ============= ABOUT ============= */
+
+.sponsor__title{
+    padding-top: 2rem;
+    text-align: center;
+    margin-bottom: var(--mb-1-5);
+}
+.sponsor__container{
+    background-color: var(--second-background-color);
+    height: 6.25rem;
+}
+
+.about{
+    padding: 4rem 0 2rem;
+}
+
+/* .about__container
+} */
+
+
+
+
+.sponsor__logo{
+    width: 100px;
+}
+
+.about__title{
+    text-align: center;
+}
