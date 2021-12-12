@@ -10,11 +10,11 @@
     --medium-font: 500;
     --bold-font: 700;
 
-    --h1-font-size: 3rem;
-    --h2-font-size: 2rem;
-    --h3-font-size: 1.5rem;
-    --h4-font-size: 1.25rem;
-    --text-font-size: 1rem;
+    --h1-font-size: 3.5rem;
+    --h2-font-size: 2.5rem;
+    --h3-font-size: 2rem;
+    --h4-font-size: 1.5rem;
+    --text-font-size: 1.25rem;
 
     /*========= Color Scheme ========= */
     --background-color: #ffffff;
@@ -112,8 +112,8 @@ img{
 }
 
 .container{
-    margin-left: 4rem;
-    margin-right: 4rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
 }
 
 /* ============= HEADER ============= */
@@ -176,6 +176,7 @@ img{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     column-gap: 10rem;
+    align-items: center;
     margin-bottom: var(--mb-2);
 }
 
@@ -215,6 +216,7 @@ img{
 
 .cta__text{
     color: rgb(126, 126, 126);
+    font-size: 1rem;
 }
 
 /* ============= ABOUT ============= */
@@ -236,24 +238,26 @@ img{
 
 .sponsor__logo{
     /* background-color: aqua; */
-    width: 8%;
+    width: 10%;
     height: auto;
-    margin: 2rem 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-right: 1.5rem;
 }
 
 .about{
-    padding: 6rem 0 2rem;
+    padding: 5rem 0 2rem;
 }
 
 
 .about__title{
     text-align: center;
-    margin-bottom: var(--mb-1-5)
+    margin-bottom: var(--mb-1-5);
 }
 
 .about__subtitle{
     text-align: center;
-    margin-bottom: calc(2* var(--mb-1-5));
+    margin-bottom: 4rem;
 }
 
 .about__image{
@@ -267,7 +271,7 @@ img{
     width: 100%;
     grid-template-columns: repeat(3,1fr);
     align-items:center;
-    column-gap: 2rem;
+    column-gap: 2.5rem;
     margin-bottom: 4rem;
 }
 
@@ -275,7 +279,37 @@ img{
     text-align: center;
 }
 
+.description__text{
+    font-size: 1rem;
+}
 .description__title{
     margin-bottom: var(--mb-1);
 }
 
+/* ============= FEATURES ============= */
+
+.features__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+.features__img{
+    width: 400px;
+    order: 1;
+}
+
+.features__title{
+    margin-top: var(--mb-1-5);
+    margin-bottom: var(--mb-1);
+}
+
+.features__description{
+    font-size: 1.125rem;
+    margin-bottom: var(--mb-1-5);
+}
+
+#features__img{
+    order: 0;
+}
