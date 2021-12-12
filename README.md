@@ -5,7 +5,6 @@ The website design is from  Craftwork with some changes. Here is the link https:
 The landing page of Circa has:
 - A responsive design 
 - Animations
-- Dark mode
 - SEO
 
 
