@@ -317,7 +317,7 @@ img{
     order: 0;
 }
 
-/* ============= FEATURES ============= */
+/* ============= PRICING ============= */
 
 .pricing{
     margin-bottom: var(--mb-2-5);
@@ -329,7 +329,9 @@ img{
 }
 
 .pricing__container{
-    padding: 2rem 1.5rem;
+    padding: 4rem 2rem;
+    border: 0.1rem solid var(--second-background-color);
+    border-radius: 1rem;
 } 
 
 /* .pricing__container-selected{
@@ -341,10 +343,35 @@ img{
 }
 
 .pricing__description{
-    margin-bottom: var(--mb-2-5);
+    padding-top: 0.6rem;
+    margin-bottom: 4rem;
     font-size: 1rem;
 }
 
 .pricing__price{
-    margin-bottom: var(--mb-1);
+    padding-right: 1rem;
+}
+
+.price{
+    margin-bottom: 4rem;
+    display: inline-flex;
+    align-items: center;
+}
+
+.text__button{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.text__button__text{
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    padding-right: 0.5rem;
+}
+
+.text__button__icon{
+    font-size: 1.2rem;
+    text-align: center;
+    color: var(--primary-color);
 }
