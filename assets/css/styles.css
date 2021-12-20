@@ -89,6 +89,7 @@ h2{
 
 h3{
     font-size: var(--h3-font-size);
+
 }
 
 h4{
@@ -177,7 +178,7 @@ img{
     grid-template-columns: repeat(2,1fr);
     column-gap: 10rem;
     align-items: center;
-    margin-bottom: var(--mb-2);
+    margin-bottom: 4rem;
 }
 
 .home__img{
@@ -186,8 +187,7 @@ img{
 }
 
 .home__title{
-    margin-top: var(--mb-1-5);
-    margin-bottom: var(--mb-1);
+    margin-bottom: var(--mb-1-5);
 }
 
 .home__description{
@@ -250,12 +250,16 @@ img{
 }
 
 
-.about__title{
+.about__title,
+.pricing__title,
+.feedback__title{
     text-align: center;
     margin-bottom: var(--mb-1-5);
 }
 
-.about__subtitle{
+.about__subtitle,
+.pricing__subtitle,
+.feedback__subtitle{
     text-align: center;
     margin-bottom: 4rem;
 }
@@ -288,11 +292,14 @@ img{
 
 /* ============= FEATURES ============= */
 
+.features{
+    margin-bottom: 6rem;
+}
 .features__container{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
 }
 
 .features__img{
@@ -301,15 +308,82 @@ img{
 }
 
 .features__title{
-    margin-top: var(--mb-1-5);
     margin-bottom: var(--mb-1);
 }
 
 .features__description{
     font-size: 1.125rem;
-    margin-bottom: var(--mb-1-5);
 }
 
 #features__img{
     order: 0;
+}
+
+/* ============= PRICING ============= */
+
+.pricing{
+    margin-bottom: var(--mb-2-5);
+}
+.pricing__table{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 2rem;
+}
+
+.pricing__container{
+    padding: 4rem 2rem;
+    border: 0.1rem solid var(--second-background-color);
+    border-radius: 1rem;
+} 
+
+#pricing__container-full{
+    padding: 4rem 2rem;
+    border: 0.1rem solid var(--second-background-color);
+    border-radius: 1rem;
+    background-color: var(--primary-color);
+}
+
+.pricing__plan{
+    margin-bottom: var(--mb-1);
+}
+
+.pricing__description{
+    padding-top: 0.6rem;
+    margin-bottom: 4rem;
+    font-size: 1rem;
+}
+
+.pricing__price{
+    padding-right: 1rem;
+}
+
+.price{
+    margin-bottom: 4rem;
+    display: inline-flex;
+    align-items: center;
+}
+
+.text__button{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.text__button__text{
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    padding-right: 0.5rem;
+}
+
+.text__button__icon{
+    font-size: 1.2rem;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+
+/* ============= PRICING ============= */
+
+.feedback{
+    margin-top: 6rem;
 }
