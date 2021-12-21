@@ -322,7 +322,7 @@ img{
 /* ============= PRICING ============= */
 
 .pricing{
-    margin-bottom: var(--mb-2-5);
+    margin-bottom: 6rem;
 }
 .pricing__table{
     display: grid;
@@ -382,8 +382,28 @@ img{
 }
 
 
-/* ============= PRICING ============= */
+/* ============= FEEDBACK ============= */
 
 .feedback{
-    margin-top: 6rem;
+    margin-top: var(--mb-2);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 4rem;
+    height: 16rem;
 }
+
+.feedback__profile{
+    display: flex;
+    justify-content: center;
+}
+
+.feedback__photo{
+    width: 100px;
+}
+
+.feedback__name,
+.feedback__text{
+    text-align: center;
+    padding-top: var(--mb-1-5) ;
+}
+
