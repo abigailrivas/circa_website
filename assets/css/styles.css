@@ -237,7 +237,6 @@ img{
 }
 
 .sponsor__logo{
-    /* background-color: aqua; */
     width: 10%;
     height: auto;
     margin-top: 2rem;
@@ -252,14 +251,16 @@ img{
 
 .about__title,
 .pricing__title,
-.feedback__title{
+.feedback__title,
+.contact__title{
     text-align: center;
     margin-bottom: var(--mb-1-5);
 }
 
 .about__subtitle,
 .pricing__subtitle,
-.feedback__subtitle{
+.feedback__subtitle,
+.contact__subtitle{
     text-align: center;
     margin-bottom: 4rem;
 }
@@ -404,6 +405,21 @@ img{
 .feedback__name,
 .feedback__text{
     text-align: center;
-    padding-top: var(--mb-1-5) ;
+    padding-top: var(--mb-1-5);
 }
 
+.feedback__text{
+    font-size: 1rem;
+}
+
+
+/* ============= CONTACT ============= */
+
+.contact{
+    margin-top: 6rem;
+    background-color: var(--second-background-color);
+}
+
+.contact__title{
+    padding-top: 4rem;
+}
