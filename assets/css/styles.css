@@ -418,8 +418,23 @@ img{
 .contact{
     margin-top: 6rem;
     background-color: var(--second-background-color);
+    display: flex;
+    justify-content: center;
 }
 
 .contact__title{
     padding-top: 4rem;
+}
+
+.contact__button{
+    background-color: black;
+    padding: 0.5rem 2rem;
+    color: white;
+    width: 10rem;
+    text-align: center;
+    font-size: 1rem;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+    
 }
